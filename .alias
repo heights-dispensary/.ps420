@@ -1,0 +1,41 @@
+#!/bin/bash
+# ================================================================================= #
+# This file touched by:
+#
+#  ███████╗█████╗███╗   █████╗  ██╗██████╗██╗   █████████████████╗██████╗███╗   ██╗
+#  ██╔════██╔══██████╗ ██████║  ████╔═══████║   ████╔════╚══██╔══██╔═══██████╗  ██║
+#  ████████████████╔████╔███████████║   ████║   █████████╗  ██║  ██║   ████╔██╗ ██║
+#  ╚════████╔══████║╚██╔╝████╔══████║   ████║   ██╚════██║  ██║  ██║   ████║╚██╗██║
+#  █████████║  ████║ ╚═╝ ████║  ██╚██████╔╚██████╔███████║  ██║  ╚██████╔██║ ╚████║
+#  ╚══════╚═╝  ╚═╚═╝     ╚═╚═╝  ╚═╝╚═════╝ ╚═════╝╚══════╝  ╚═╝   ╚═════╝╚═╝  ╚═══╝
+#
+# ================================================================================= #
+
+# ===Let's bring in some alias===================================================== #
+
+#aliases ========================================================================== #
+alias cli-notifications="sudo nano /usr/bin/cli_app.sh"
+alias termtabcolor="sudo nano /home/samhouston/.config/gtk-3.0/gtk.css" 
+alias watch="sudo iftop -i wlp2s0"
+alias bashrc="sudo nano -l ~/.bashrc"
+alias listen="somafm"
+alias update="sudo apt update && sudo apt list --upgradable"
+alias macos="sudo vmware"
+alias windows="sudo vmware"
+alias upgrade="sudo apt upgrade"
+alias restart-teamviewer="sudo teamviewer daemon stop && sudo teamviewer daemon start"
+alias tmux6="tmux new-session \; split-window -h \; split-window -v -p 66 \; split-window -v \; select-pane -t 0 \; split-window -v -p 66 \; split-window -v \;"
+alias nanoroot="sudo nano"
+alias aliaslist="cd /home/samhouston/ && ./aliaslist"
+alias tmuxnet="cd /home/samhouston/ && runinnewtab "tmuxnet.sh 2>/dev/null""
+alias tmuxdesk="cd /home/samhouston/ && runinnewtab "tmuxdesk.sh 2>/dev/null""
+alias addsudo="sudo visudo"
+alias t3x="cd /home/samhouston/ && ./ssh-t3x"
+alias endbash="killall -r bash"
+alias takenote="cd /home/samhouston/ && sudo nano notes"
+alias runinnewtab="cd /home/samhouston/ && ./runinnewtab"
+alias coin="coinmon -f doge,bat,xrp && coinmon"
+# ===end aliases=================================================================== #
+
+
+

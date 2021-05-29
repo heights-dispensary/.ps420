@@ -1,0 +1,37 @@
+#!/bin/bash
+# ================================================================================= #
+# This file touched by:
+#
+#  ███████╗█████╗███╗   █████╗  ██╗██████╗██╗   █████████████████╗██████╗███╗   ██╗
+#  ██╔════██╔══██████╗ ██████║  ████╔═══████║   ████╔════╚══██╔══██╔═══██████╗  ██║
+#  ████████████████╔████╔███████████║   ████║   █████████╗  ██║  ██║   ████╔██╗ ██║
+#  ╚════████╔══████║╚██╔╝████╔══████║   ████║   ██╚════██║  ██║  ██║   ████║╚██╗██║
+#  █████████║  ████║ ╚═╝ ████║  ██╚██████╔╚██████╔███████║  ██║  ╚██████╔██║ ╚████║
+#  ╚══════╚═╝  ╚═╚═╝     ╚═╚═╝  ╚═╝╚═════╝ ╚═════╝╚══════╝  ╚═╝   ╚═════╝╚═╝  ╚═══╝
+#
+# ================================================================================= #
+
+# ===Let's bring in some exports=================================================== #
+#
+# #define character encoding#
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+# #boost libraries (www.boost.org)
+export BOOST_ROOT=/home/samhouston/boost_1_71_0
+export INCLUDE=/home/samhouston/boost_1_71_0
+export LIBRARY_PATH=/home/samhouston/boost_1_71_0/stage/lib
+export BOOST_ROOT=/home/samhouston/boost_1_71_0
+# #locals
+export PATH="$LOCAL/bin:$PATH"
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/bin
+# #remembering all of your mistakes like a super power
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+# #nano is the editor. 
+export EDITOR=nano
+export VISUAL=nano
+# ===end exports=================================================================== #
+
