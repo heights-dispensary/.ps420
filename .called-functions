@@ -28,9 +28,6 @@
 
 # ===look for tmux section and exit================================================ #
 
-
-
-
 #!/bin/sh
 
 function am-i-in-tmux() {
