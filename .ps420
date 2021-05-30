@@ -26,56 +26,37 @@
 #                               
 ##############################################################################################################################
 
-# ===Let's bring in some functions================================================= #
 
-#append history with no history limit ============================================= #
+#colors-PS1-topbar############################################################################################################
+tcoloff=$(tput sgr0)
+bat0c=$(tput setab 235)$(tput setaf 64)
+bat0cst=$(tput setab 234)$(tput setaf 46)$(tput dim)
+lfoc=$(tput setab 235)$(tput setaf 64) 
+nmclicolor=$(tput setab 235)$(tput setaf 145)   
+bat0c1=$(tput setab 235)$(tput setaf 81)   
+lfosc=$(tput setab 237)$(tput setaf 214)$(tput dim) 
+ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
 
-shopt -s histappend
-
-HISTSIZE= 
-HISTFILESIZE=
-
-#===Have your own aliases? Let's pull them in.
-
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
-
-#===ssh settings
-
-# Set up ssh-agent
-SSH_ENV="$HOME/.ssh/environment"
- 
-function start_agent {
-    echo "Initializing new SSH agent..."
-    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-    echo succeeded
-    chmod 600 "${SSH_ENV}"
-    . "${SSH_ENV}" > /dev/null
-    /usr/bin/ssh-add;
-}
-
-# Source SSH settings, if applicable
-if [ -f "${SSH_ENV}" ]; then
-    . "${SSH_ENV}" > /dev/null
-    #ps ${SSH_AGENT_PID} doesn't work under cywgin
-    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-        start_agent;
-    }
-else
-    start_agent;
-fi
+#end-colors-PS1-topbar#######################################################################################################
 
 
+#battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1###############################################################
+echo -ne  "${bat0c}🔋""$(tput sgr0)""${bat0cst}"  $(cat /sys/class/power_supply/BAT0/status) "$(tput sgr0) "
 
-#===Enable programmable completions.
+echo -ne  "${lfoc} last file created: ${lfosc}" $(ls -1 -t | head -1) "$(tput sgr0)"
 
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
+echo -ne  "${lfoc} public: $(tput setab 237)$(tput setaf 145)$(tput dim) "  "IP PLACEMENT " "$(tput sgr0)"
+
+echo -ne  "${ora3} " $(tty) "${lfosc}"
+
+echo -ne "${nmclicolor}"
+echo
+nmcli connection show --active 
+echo -ne "$(tput sgr0)"
+seq 2 | tr -dc '\n'
+
+#end-battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1###########################################################
 
 
+#PS1########################################################################################################################3
+PS1='\[$(tput setaf 64)\]\W 🍀 \[$(tput sgr0)\]'
