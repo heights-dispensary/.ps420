@@ -1,5 +1,5 @@
-    # bashrc
-    ~/.ps420:  a reorganization of bash initialization
+            # bashrc
+            ~/.ps420:  
                                   M                            
                                  dM                            
                                  MMr                           
