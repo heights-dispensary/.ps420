@@ -27,10 +27,10 @@
 
                Script Name   : .ps420
                Path          : ~/.                                                                                   
-               Description   : ~/.ps420:  a reorganization of bash initialization for interactive shells executed by .bashrc
-                               ~/.bashrc: executed by bash¹ for interactive shells.                                                                          
+               Description   : ~/.ps420  | a reorganization of bash initialization, for interactive shells executed by bashrc
+                               ~/.bashrc | executed by bash¹ for interactive shells.                                                                          
                
-               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/ | .called-functions                 
+               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/                  
                
                Email         : webserver@heightsdispensary.com 
                Public License: GNU GENERAL PUBLIC Version
@@ -42,6 +42,8 @@
                                https://developer.gnome.org/NetworkManager/stable/nmcli.html³
 
                                                                                                                           
+                               Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.gz
+
                                
 
 

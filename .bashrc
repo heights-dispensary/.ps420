@@ -31,13 +31,17 @@
 #  ██║  ███████████╚██████╔██║  ██║  ██║  ███████║    ██████╔███████████║    █████████║ ╚█████████████║  ████║  ██║  ██║     #
 #  ╚═╝  ╚═╚══════╚═╝╚═════╝╚═╝  ╚═╝  ╚═╝  ╚══════╝    ╚═════╝╚═╚══════╚═╝    ╚══════╚═╝  ╚═══╚══════╚═╝  ╚═╚═╝  ╚═╝  ╚═╝     #
 # ===========================================================================================================================#
-#############################################################################Made for Debian##################################
+          
+            #ps1 file and source file
+            . ~/.ps420
+            . ~/.source
+
 #               Script Name   : .ps420
 #               Path          : ~/.                                                                                   
-#               Description   : ~/.ps420:  a reorganization of bash initialization for interactive shells executed by .bashrc
-#                               ~/.bashrc: executed by bash¹ for interactive shells.                                                                          
+#               Description   : ~/.ps420  | a reorganization of bash initialization, for interactive shells executed by bashrc
+#                               ~/.bashrc | executed by bash¹ for interactive shells.                                                                         
 #               
-#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/ | .called-functions                 
+#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/                  
 #               
 #               Email         : webserver@heightsdispensary.com 
 #               Public License: GNU GENERAL PUBLIC Version
@@ -46,13 +50,6 @@
 #                               Tested only in Debian Buster and Bullseye, Gnome libraries required.³                                                               
 #                               https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
 #                               https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
-#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³                                                                                                                          
-#                               
-##############################################################################################################################
+#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³  
 
-# ===sources for PS1 and sources =========================================================================================== #
-
-source ~/.ps1
-source ~/.source
-
-# ========================================================================================================================== #
+               

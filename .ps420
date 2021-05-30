@@ -1,3 +1,27 @@
+
+#                                                     M                            
+#                                                     dM                            
+#                                                     MMr                           
+#                                                    4MMML                  .       
+#                                                    MMMMM.                xf       
+#                                    .              'MMMMM               .MM-       
+#                                     Mh..          +MMMMMM            .MMMM        
+#                                    .MMM.         .MMMMML.          MMMMMh        
+#                                    iMMMh.        MMMMMM         MMMMMMM         
+#                                    3MMMMx.     'MMMMMMf      xnMMMMMM'         
+#                                    '*MMMMM      MMMMMM.     nMMMMMMP.          
+#                                     *MMMMMx    .MMMMM.    .MMMMMMM            
+#                                      *MMMMMh   "MMMMM"   JMMMMMMP             
+#                                        MMMMMM   3MMMM.  dMMMMMM            .  
+#                                         MMMMMM  "MMMM  .MMMMMi        .nnMP"  
+#                              m..         *MMMMx  MMM"  dMMMM"    .nnMMMMM*    
+#                               "MMn...     'MMMMr 'MM   MMM"   .nMMMMMMM*'     
+#                                "4MMMMnn..   *MMM  MM  MMP"  .dMMMMMMM""       
+#                                  ^MMMMMMMMx.  *ML "M .M*  .MMMMMM**"          
+#                                     *PMMMMMMhn. *x > M  .MMMM**""             
+#                                            ''**MMMMhx/.h/ .=*'                    
+#                                                 .3P'%....                     
+#                                               nP"     "*MMnx    
 #!/bin/bash
 # ========================================================================================================================== #
 #  ██╗  ███████████╗██████╗██╗  █████████████████╗    ██████╗███████████████╗██████████╗   █████████╗█████╗██████╗██╗   ██╗  #
@@ -7,13 +31,13 @@
 #  ██║  ███████████╚██████╔██║  ██║  ██║  ███████║    ██████╔███████████║    █████████║ ╚█████████████║  ████║  ██║  ██║     #
 #  ╚═╝  ╚═╚══════╚═╝╚═════╝╚═╝  ╚═╝  ╚═╝  ╚══════╝    ╚═════╝╚═╚══════╚═╝    ╚══════╚═╝  ╚═══╚══════╚═╝  ╚═╚═╝  ╚═╝  ╚═╝     #
 # ===========================================================================================================================#
-#############################################################################Made for Debian##################################
+
 #               Script Name   : .ps420
 #               Path          : ~/.                                                                                   
-#               Description   : ~/.ps420:  a reorganization of bash initialization for interactive shells executed by .bashrc
-#                               ~/.bashrc: executed by bash¹ for interactive shells.                                                                          
+#               Description   : ~/.ps420  | a reorganization of bash initialization, for interactive shells executed by bashrc
+#                               ~/.bashrc | executed by bash¹ for interactive shells.                                                                         
 #               
-#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/ | .called-functions                 
+#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/                  
 #               
 #               Email         : webserver@heightsdispensary.com 
 #               Public License: GNU GENERAL PUBLIC Version
@@ -22,41 +46,53 @@
 #                               Tested only in Debian Buster and Bullseye, Gnome libraries required.³                                                               
 #                               https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
 #                               https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
-#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³                                                                                                                          
-#                               
-##############################################################################################################################
+#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³  
+    #colors-PS1-topbar
+    tcoloff=$(tput sgr0)
+    bat0c=$(tput setab 235)$(tput setaf 64)
+    bat0cst=$(tput setab 234)$(tput setaf 46)$(tput dim)
+    lfoc=$(tput setab 235)$(tput setaf 64) 
+    nmclicolor=$(tput setab 235)$(tput setaf 145)   
+    bat0c1=$(tput setab 235)$(tput setaf 81)   
+    lfosc=$(tput setab 237)$(tput setaf 214)$(tput dim) 
+    ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
+
+    #battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1/
+    echo -ne  "${bat0c}🔋""$(tput sgr0)""${bat0cst}"  $(cat /sys/class/power_supply/BAT0/status) "$(tput sgr0) "
+
+    echo -ne  "${lfoc} last file created: ${lfosc}" $(ls -1 -t | head -1) "$(tput sgr0)"
+
+            echo -ne  "${lfoc} public: $(tput setab 64)$(tput setaf 235)$(tput dim) " $(dig +short myip.opendns.com @resolver1.opendns.$
+
+    echo -ne  "${ora3} " $(tty) "${lfosc}"
+
+    echo -ne "${nmclicolor}"
+    echo
+    nmcli connection show --active 
+    echo -ne "$(tput sgr0)"
+    echo
+
+    #PS1 
+    PS1='\[$(tput setaf 64)\]\W 🍀 \[$(tput sgr0)\]'
 
 
-#colors-PS1-topbar############################################################################################################
-tcoloff=$(tput sgr0)
-bat0c=$(tput setab 235)$(tput setaf 64)
-bat0cst=$(tput setab 234)$(tput setaf 46)$(tput dim)
-lfoc=$(tput setab 235)$(tput setaf 64) 
-nmclicolor=$(tput setab 235)$(tput setaf 145)   
-bat0c1=$(tput setab 235)$(tput setaf 81)   
-lfosc=$(tput setab 237)$(tput setaf 214)$(tput dim) 
-ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
-
-#end-colors-PS1-topbar#######################################################################################################
 
 
-#battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1###############################################################
-echo -ne  "${bat0c}🔋""$(tput sgr0)""${bat0cst}"  $(cat /sys/class/power_supply/BAT0/status) "$(tput sgr0) "
-
-echo -ne  "${lfoc} last file created: ${lfosc}" $(ls -1 -t | head -1) "$(tput sgr0)"
-
-echo -ne  "${lfoc} public: $(tput setab 237)$(tput setaf 145)$(tput dim) "  "IP PLACEMENT " "$(tput sgr0)"
-
-echo -ne  "${ora3} " $(tty) "${lfosc}"
-
-echo -ne "${nmclicolor}"
-echo
-nmcli connection show --active 
-echo -ne "$(tput sgr0)"
-seq 2 | tr -dc '\n'
-
-#end-battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1###########################################################
 
 
-#PS1########################################################################################################################3
-PS1='\[$(tput setaf 64)\]\W 🍀 \[$(tput sgr0)\]'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

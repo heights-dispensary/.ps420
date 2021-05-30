@@ -7,75 +7,53 @@
 #  ██║  ███████████╚██████╔██║  ██║  ██║  ███████║    ██████╔███████████║    █████████║ ╚█████████████║  ████║  ██║  ██║     #
 #  ╚═╝  ╚═╚══════╚═╝╚═════╝╚═╝  ╚═╝  ╚═╝  ╚══════╝    ╚═════╝╚═╚══════╚═╝    ╚══════╚═╝  ╚═══╚══════╚═╝  ╚═╚═╝  ╚═╝  ╚═╝     #
 # ===========================================================================================================================#
-#############################################################################Made for Debian##################################
-#               Script Name   : .ps420
-#               Path          : ~/.                                                                                   
-#               Description   : ~/.ps420:  a reorganization of bash initialization for interactive shells executed by .bashrc
-#                               ~/.bashrc: executed by bash¹ for interactive shells.                                                                          
-#               
-#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/ | .called-functions                 
-#               
-#               Email         : webserver@heightsdispensary.com 
-#               Public License: GNU GENERAL PUBLIC Version
-#               Disclaimer    : Some functionality requires sudoers access or passing sudo in script.¹
-#                               Provided with no liability or warranty.² 
-#                               Tested only in Debian Buster and Bullseye, Gnome libraries required.³                                                               
-#                               https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
-#                               https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
-#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³                                                                                                                          
-#                               
-##############################################################################################################################
+          
+            # alias container
+            if [ -e $HOME/.alias ]; then
+               source $HOME/.alias
+            fi
+            
+            # append history with no history limit 
+            shopt -s histappend
 
-# ===Let's bring in some functions================================================= #
+            HISTSIZE= 
+            HISTFILESIZE=
 
-#append history with no history limit ============================================= #
+            # Have your own aliases? Let's pull them in.
+            if [ -f ~/.bash_aliases ]; then
+            . ~/.bash_aliases
+            fi
 
-shopt -s histappend
+            # ssh settings
+            SSH_ENV="$HOME/.ssh/environment"
 
-HISTSIZE= 
-HISTFILESIZE=
+            function start_agent {
+              echo "Initializing new SSH agent..."
+              /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+              echo succeeded
+              chmod 600 "${SSH_ENV}"
+              . "${SSH_ENV}" > /dev/null
+              /usr/bin/ssh-add;
+            }
 
-#===Have your own aliases? Let's pull them in.
+            # Source SSH settings, if applicable
+            if [ -f "${SSH_ENV}" ]; then
+              . "${SSH_ENV}" > /dev/null
+              #ps ${SSH_AGENT_PID} doesn't work under cywgin
+              ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+                  start_agent;
+              }
+            else
+              start_agent;
+            fi
 
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
-
-#===ssh settings
-
-# Set up ssh-agent
-SSH_ENV="$HOME/.ssh/environment"
- 
-function start_agent {
-    echo "Initializing new SSH agent..."
-    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-    echo succeeded
-    chmod 600 "${SSH_ENV}"
-    . "${SSH_ENV}" > /dev/null
-    /usr/bin/ssh-add;
-}
-
-# Source SSH settings, if applicable
-if [ -f "${SSH_ENV}" ]; then
-    . "${SSH_ENV}" > /dev/null
-    #ps ${SSH_AGENT_PID} doesn't work under cywgin
-    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-        start_agent;
-    }
-else
-    start_agent;
-fi
-
-
-
-#===Enable programmable completions.
-
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
+            # Enable programmable completions.
+            if ! shopt -oq posix; then
+            if [ -f /usr/share/bash-completion/bash_completion ]; then
+              . /usr/share/bash-completion/bash_completion
+            elif [ -f /etc/bash_completion ]; then
+              . /etc/bash_completion
+            fi
+            fi
 
 
