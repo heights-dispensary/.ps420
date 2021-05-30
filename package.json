@@ -1,0 +1,31 @@
+{
+  "name": ".ps420",
+  "description": "bash reorganization.",
+  "version": "0.1",
+  "maintainers": [
+    {
+      "name": "Heights Dispensary",
+      "email": "high@heightsdispensary.com",
+      "web": "www.heightsdispensary.com"
+    }
+  ],
+  "demos": [
+    "https://github.com/heights-dispensary/.ps420/releases/download/0.01/ps420.tar.xz"
+  ],
+  "bugs": {
+    "web": ""
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/heights-dispensary/.ps420.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "GPL3",
+      "url": "https://github.com/heights-dispensary/.ps420/blob/main/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/heights-dispensary/.ps420"
+}
