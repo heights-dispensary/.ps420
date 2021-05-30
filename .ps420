@@ -32,13 +32,10 @@
     lfosc=$(tput setab 237)$(tput setaf 214)$(tput dim) 
     ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
 
-    #battery-status/last-file-created/public-ip/tty/nmcli-tool/ps1/
-    echo -ne  "${bat0c}🔋""$(tput sgr0)""${bat0cst}" "" "$(cat /sys/class/power_supply/BAT0/status)" "$(tput sgr0) "
-
-    echo -ne  "${lfoc} last file created: ${lfosc}" $(ls -1 -t | head -1) "$(tput sgr0)"
-
-    echo -ne  "${lfoc} public:"" $(tput setab 64)""$(tput setaf 235)""$(tput dim)" $(curl ipaddress.sh) "${ora3}" $(tty) "${lfosc}"
-  
+    echo -ne  "${bat0c}🔋$(tput sgr0)${bat0cst}"$(cat /sys/class/power_supply/BAT0/status)"$(tput sgr0)"
+    echo -ne  "${lfoc} last file created: ${lfosc}"$(ls -1 -t | head -1)"$(tput sgr0)"
+    echo
+    echo -ne  "${lfoc}public: $(tput setab 64)$(tput setaf 235)$(tput dim)"$(dig +short ipaddress.sh)"${ora3}" $(tty)"${lfosc}"
     echo -ne "${nmclicolor}"
     echo
     nmcli connection show --active 
