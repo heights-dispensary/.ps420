@@ -7,52 +7,25 @@
 #  ██║  ███████████╚██████╔██║  ██║  ██║  ███████║    ██████╔███████████║    █████████║ ╚█████████████║  ████║  ██║  ██║     #
 #  ╚═╝  ╚═╚══════╚═╝╚═════╝╚═╝  ╚═╝  ╚═╝  ╚══════╝    ╚═════╝╚═╚══════╚═╝    ╚══════╚═╝  ╚═══╚══════╚═╝  ╚═╚═╝  ╚═╝  ╚═╝     #
 # ===========================================================================================================================#
-#############################################################################Made for Debian##################################
-#               Script Name   : .ps420
-#               Path          : ~/.                                                                                   
-#               Description   : ~/.ps420:  a reorganization of bash initialization for interactive shells executed by .bashrc
-#                               ~/.bashrc: executed by bash¹ for interactive shells.                                                                          
-#               
-#               Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/ | .called-functions                 
-#               
-#               Email         : webserver@heightsdispensary.com 
-#               Public License: GNU GENERAL PUBLIC Version
-#               Disclaimer    : Some functionality requires sudoers access or passing sudo in script.¹
-#                               Provided with no liability or warranty.² 
-#                               Tested only in Debian Buster and Bullseye, Gnome libraries required.³                                                               
-#                               https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
-#                               https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
-#                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³                                                                                                                          
-#                               
-##############################################################################################################################
 
-
-#aliases ========================================================================== #
-alias watch="sudo iftop -i "
-alias bashrc="sudo nano -l ~/.bashrc"
-alias listen="mplayer http://drugs.money"
-alias update="sudo apt update && sudo apt list --upgradable"
-alias upgrade="sudo apt upgrade"
-alias restart-teamviewer="sudo teamviewer daemon stop && sudo teamviewer daemon start"
-alias tmux6="tmux new-session \; split-window -h \; split-window -v -p 66 \; split-window -v \; select-pane -t 0 \; split-window -v -p 66 \; split-window -v \;"
-alias nanoroo="sudo nano"
-alias tmuxnet="cd /home/samhouston/ && runinnewtab "tmuxnet.sh 2>/dev/null""
-alias tmuxdesk="cd /home/samhouston/ && runinnewtab "tmuxdesk.sh 2>/dev/null""
-alias addsudo="sudo visudo"
-alias bashed="killall -r bash" 
-alias godnotes="cd ~./ && sudo nano notes"
-alias runinnewtab="cd /home/samhouston/ && ./runinnewtab"
-alias coin="coinmon -f doge,bat,xrp && coinmon"
-
-
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias ll='ls -l --color=auto'
-alias la='ls -A'
-alias l='ls -la --color=auto'
-# ===end aliases=================================================================== #
-
+    #aliases 
+    alias .alias="echo "name alias:" && read newalias && echo "name of binary" && read newbinary && echo -e "alias $newalias =' " "$newbinary ' " > .alias "
+    alias watch="sudo iftop -i "
+    alias bashrc="sudo nano -l ~/.bashrc"
+    alias listen="mplayer http://drugs.money"
+    alias doit="sudo apt update && sudo apt list --upgradable && sudo apt upgrade"
+    alias restart-teamviewer="sudo teamviewer daemon stop && sudo teamviewer daemon start"
+    alias tmux6="tmux new-session \; split-window -h \; split-window -v -p 66 \; split-window -v \; select-pane -t 0 \; split-window -v -p 66 \; split-window -v \;"
+    alias nanoroo="sudo nano"
+    alias addsudo="sudo visudo"
+    alias godnotes="sudo nano notes"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+    alias ll='ls -l --color=auto'
+    alias la='ls -A'
+    alias l='ls -la --color=auto'
+    alias export='sudo export'
 
 
