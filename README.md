@@ -1,5 +1,5 @@
-            # bashrc
-            ~/.ps420:  
+          # bashrc
+          ~/.ps420:  
                                   M                            
                                  dM                            
                                  MMr                           
