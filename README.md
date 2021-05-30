@@ -26,7 +26,7 @@
 
      Script Name   : .ps420
      Path          : ~/.                                                                                   
-     Description   : ~/.ps420  | a reorganization of bash initialization
+     Description   : ~/.ps420  | a reorganization of bash initialization.
                      ~/.bashrc | executed by bash¹ for interactive shells.                                                                          
 
      Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/                  
