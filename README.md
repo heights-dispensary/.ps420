@@ -42,8 +42,8 @@
                                https://developer.gnome.org/NetworkManager/stable/nmcli.html³
 
                                                                                                                           
-                               Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.gz
+                               Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.xz
 
-                               
+
 
 
