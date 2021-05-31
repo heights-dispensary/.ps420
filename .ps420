@@ -24,26 +24,35 @@
 #                               https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
 #                               https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
 #                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³  
-    #colors-PS1-topbar
-    bat0c=$(tput setab 235)$(tput setaf 64)
-    bat0cst=$(tput setab 234)$(tput setaf 46)$(tput dim)
-    lfoc=$(tput setab 235)$(tput setaf 64) 
-    nmclicolor=$(tput setab 235)$(tput setaf 145)   
-    lfosc=$(tput setab 237)$(tput setaf 214)$(tput dim) 
-    ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
+             
+          
+                #color-wht-txt             
+                tcoloff=$(tput sgr0)
+                bat0c=$(tput setab 235)$(tput setaf 64)
+                bat0cst=$(tput setab 234)$(tput setaf 46)$(tput dim)
+                lfoc=$(tput setab 235)$(tput setaf 113) 
+                nmclicolor=$(tput setab 235)$(tput setaf 145)   
+                bat0c1=$(tput setab 235)$(tput setaf 81)   
+                lfosc=$(tput setab 237)$(tput setaf 41)$(tput dim) 
+                ora3=$(tput setab 237)$(tput setaf 46)$(tput dim)
+                bat0c=$(tput setab 234)$(tput setaf 64)
+                lfosc=$(tput setab 237)$(tput setaf 107)$(tput dim) 
+                lfoc=$(tput setab 240)$(tput setaf 150) 
 
-    echo -ne  "${bat0c}🔋$(tput sgr0)${bat0cst}"$(cat /sys/class/power_supply/BAT0/status)"$(tput sgr0)"
-    echo -ne  "${lfoc} last file created: ${lfosc}"$(ls -1 -t | head -1)"$(tput sgr0)"
-    echo
-    echo -ne  "${lfoc}public: $(tput setab 64)$(tput setaf 235)$(tput dim)"$(dig +short ipaddress.sh)"${ora3}" $(tty)"${lfosc}"
-    echo -ne "${nmclicolor}"
-    echo
-    nmcli connection show --active 
-    echo -ne "$(tput sgr0)"
-    echo
+                #banner
+                echo
+                echo -ne  "${bat0c}"🔋"$(cat /sys/class/power_supply/BAT0/status)"" ""$(tput sgr0)"
+                echo -ne  "${lfosc} last file created ${lfoc}"$(ls -1 -t | head -1)"$(tput sgr0)"
+                echo
+                echo -ne  "${bat0c}public ""$(tput setab 64)$(tput setaf 235)$(tput dim)" $(dig +short ipaddress.sh)"${lfosc}" $(tty)"${lfosc}"
+                echo -ne "${nmclicolor}"
+                echo
+                nmcli connection show --active 
+                echo -ne "$(tput sgr0)"
+                echo
 
-    #PS1 
-    PS1='\[$(tput setaf 64)\]\W 🍀 \[$(tput sgr0)\]'
+                #ps1
+                PS1='\[$(tput setaf 64)\]\W 🍀 \[$(tput sgr0)\]'
 
 
 
