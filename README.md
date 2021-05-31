@@ -1,6 +1,8 @@
                       
 
 [![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
+
 
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://shields.io/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
@@ -20,7 +22,7 @@
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
                                         Email         : webserver@heightsdispensary.com 
-                                        Public License: [![Generic badge](https://img.shields.io/badge/<LICENSED>-<MIT>-<COLOR>.svg)](https://shields.io/)
+                                        Public License: 
 
                                         
                                                       
