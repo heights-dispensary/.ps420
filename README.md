@@ -4,7 +4,7 @@
 
 
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://shields.io/)
-[![Maintenance](https://img.shields.io/badge/Maintained<COLORS>YES.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
 
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
