@@ -20,7 +20,9 @@
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
                                         Email         : webserver@heightsdispensary.com 
-                                        Public License: ![MIT](https://user-images.githubusercontent.com/10424858/120166086-dcab6100-c1c1-11eb-80f3-cee328006f74.png)
+                                        Public License: 
+                                        
+                                        [!MIT](https://user-images.githubusercontent.com/10424858/120166086-dcab6100-c1c1-11eb-80f3-cee328006f74.png)
 
                                         
                                         Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
