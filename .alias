@@ -9,7 +9,6 @@
 #                                |___/                             |_|                              |___/ 
 
     #aliases 
-    alias .alias="echo "name alias:" && read newalias && echo "name of binary" && read newbinary && echo -e "alias $newalias =' " "$newbinary ' " > .alias "
     alias watch="sudo iftop -i "
     alias bashrc="sudo nano -l ~/.bashrc"
     alias listen="mplayer http://drugs.money"
