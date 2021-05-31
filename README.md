@@ -1,7 +1,8 @@
                       
+![pa42oinit](https://user-images.githubusercontent.com/10424858/120240771-ffbc2c00-c226-11eb-83a3-06b529921968.png)
 
-[![Generic badge](https://img.shields.io/badge/.BASHRC-RE~ORGANIZED-<COLOR>.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://heightsdispensary.com/)
+
+
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
       
