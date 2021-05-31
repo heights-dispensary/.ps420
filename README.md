@@ -3,6 +3,9 @@
 
 [![Generic badge](https://img.shields.io/badge/<BASHRC>-<REORGANIZATION>-<COLOR>.svg)](https://shields.io/)
 
+[![Generic badge](https://img.shields.io/badge/<BASHRC>-<ALIAS>-<GREEN>.svg)](https://shields.io/)
+
+
                 
                                         Script Name   : .ps420 
 
