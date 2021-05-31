@@ -19,7 +19,7 @@
 ![ps420](https://user-images.githubusercontent.com/10424858/120169570-b687c000-c1c5-11eb-9f9a-886eec682f6b.png)
 
 
-      Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
+      Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions
 
       Email         : webserver@heightsdispensary.com 
 
