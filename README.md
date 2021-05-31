@@ -1,7 +1,6 @@
     # bashrc
     ~/.ps420:  
 
-    [![Logo:ps420](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)](https://github.com/heights-dispensary/.ps420)
 
     Script Name   : .ps420
     Path          : ~/.                                                 
@@ -11,7 +10,7 @@
     Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
     Email         : webserver@heightsdispensary.com 
-    Public License: GNU GENERAL PUBLIC Version
+    Public License: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
                     Provided with no liability or warranty.² 
                     Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
