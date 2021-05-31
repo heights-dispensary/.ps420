@@ -5,7 +5,9 @@
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
       
-      wget -O ps420.tar.xz https://git.io/JGBe6 && sudo mv ~/.bashrc ~/bashrc.bak && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
+      wget -O ps420.tar.xz https://git.io/JGBe6
+      sudo mv ~/.bashrc ~/bashrc.bak
+      sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
                 
       Script Name   : .ps420 
       Path          : ~/.       
