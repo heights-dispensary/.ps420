@@ -1,0 +1,36 @@
+#!/bin/bash
+#                  _    _      _       _     _         _____  _                                           
+#                 | |  | |    (_)     | |   | |       |  __ \(_)                                          
+#                 | |__| | ___ _  __ _| |__ | |_ ___  | |  | |_ ___ _ __   ___ _ __  ___  __ _ _ __ _   _ 
+#                 |  __  |/ _ \ |/ _` | '_ \| __/ __| | |  | | / __| '_ \ / _ \ '_ \/ __|/ _` | '__| | | |
+#                 | |  | |  __/ | (_| | | | | |_\__ \ | |__| | \__ \ |_) |  __/ | | \__ \ (_| | |  | |_| |
+#                 |_|  |_|\___|_|\__, |_| |_|\__|___/ |_____/|_|___/ .__/ \___|_| |_|___/\__,_|_|   \__, |
+#                                 __/ |                            | |                               __/ |
+#                                |___/                             |_|                              |___/ 
+          
+           
+
+            # ssh settings
+            SSH_ENV="$HOME/.ssh/environment"
+
+            function start_agent {
+              echo "Initializing new SSH agent..."
+              /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+              echo succeeded
+              chmod 600 "${SSH_ENV}"
+              . "${SSH_ENV}" > /dev/null
+              /usr/bin/ssh-add;
+            }
+
+            # Source SSH settings, if applicable
+            if [ -f "${SSH_ENV}" ]; then
+              . "${SSH_ENV}" > /dev/null
+              #ps ${SSH_AGENT_PID} doesn't work under cywgin
+              ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+                  start_agent;
+              }
+            else
+              start_agent;
+            fi
+
+         
