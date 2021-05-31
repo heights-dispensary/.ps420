@@ -1,12 +1,10 @@
-    
-    ~/.ps420:! ! ![Screenshot from 2021-05-31 02-36-11](https://user-images.githubusercontent.com/10424858/120158797-21cb9500-c1ba-11eb-89c6-ace7aadfdcdd.png) ![maint](https://user-images.githubusercontent.com/10424858/120158816-25f7b280-c1ba-11eb-821d-40cb650a64f3.png)
-
-                 
+                      
 
 
 
                 
-                                        Script Name   : .ps420 
+                                        Script Name   : .ps420 | ![vscode](https://user-images.githubusercontent.com/10424858/120159677-1331ad80-c1bb-11eb-8bda-728922cfd592.png) ![maint2](https://user-images.githubusercontent.com/10424858/120159685-14fb7100-c1bb-11eb-9a06-f428c36f886b.png)
+
 
                                         Path          : ~/.                                                 
                                         Description   : ~/.ps420  | a reorganization of bash initialization.
@@ -18,7 +16,8 @@
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
                                         Email         : webserver@heightsdispensary.com 
-                                        Public License: ![Screenshot from 2021-05-31 02-38-41](https://user-images.githubusercontent.com/10424858/120158831-2abc6680-c1ba-11eb-8560-84c911250bb8.png)
+                                        Public License: ![mit](https://user-images.githubusercontent.com/10424858/120159854-45430f80-c1bb-11eb-99b3-1d9ec5d29461.png)
+
                                         Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
                                                         Provided with no liability or warranty.² 
                                                         Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
