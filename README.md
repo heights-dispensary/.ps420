@@ -1,6 +1,6 @@
     # bashrc
     ~/.ps420:  
-                   <img src="https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png">
+                   <img src="https://raw.githubusercontent.com/heights-dispensary/.ps420/main/leaf.ps420.png">
 
 
 
