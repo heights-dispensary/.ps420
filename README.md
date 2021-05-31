@@ -3,7 +3,7 @@
 
 
                 
-                                        Script Name   : .ps420 | ![shabang](https://user-images.githubusercontent.com/10424858/120159677-1331ad80-c1bb-11eb-8bda-728922cfd592.png) ![maint2](https://user-images.githubusercontent.com/10424858/120159685-14fb7100-c1bb-11eb-9a06-f428c36f886b.png)
+                                        Script Name   : .ps420 
 
 
                                         Path          : ~/.                                                 
@@ -16,8 +16,8 @@
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
                                         Email         : webserver@heightsdispensary.com 
-                                        Public License: ![mit](https://user-images.githubusercontent.com/10424858/120159854-45430f80-c1bb-11eb-99b3-1d9ec5d29461.png)
-
+                                        Public License: 
+                                        
                                         Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
                                                         Provided with no liability or warranty.² 
                                                         Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
