@@ -4,8 +4,8 @@
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://heightsdispensary.com/)
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
-      Install with: wget -O ps420.tar.xz https://git.io/JGBe6 && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
-
+      
+      Install with: wget -O ps420.tar.xz https://git.io/JGBe6 && sudo mv ~/.bashrc ~/bashrc.bak && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
                 
       Script Name   : .ps420 
       Path          : ~/.       
@@ -30,7 +30,7 @@
                       https://developer.gnome.org/NetworkManager/stable/nmcli.html³
 
 
-      Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.xz
+      Install with: wget -O ps420.tar.xz https://git.io/JGBe6 && sudo mv ~/.bashrc ~/bashrc.bak && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
 
 
 
