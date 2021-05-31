@@ -6,6 +6,7 @@
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
       
+      Manual Installation
       wget -O ps420.tar.xz https://git.io/JGBe6
       sudo mv ~/.bashrc ~/bashrc.bak
       sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
@@ -36,7 +37,6 @@
                       https://developer.gnome.org/NetworkManager/stable/nmcli.html³
 
 
-      wget -O ps420.tar.xz https://git.io/JGBe6 && sudo mv ~/.bashrc ~/bashrc.bak && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
 
 
 
