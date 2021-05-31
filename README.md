@@ -1,5 +1,5 @@
-    # bashrc
-    ~/.ps420:  
+    
+    ~/.ps420:![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)  
                  
 
 
