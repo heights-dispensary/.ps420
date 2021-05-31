@@ -9,7 +9,8 @@
                                         Path          : ~/.                                                 
                                         Description   : ~/.ps420  | a reorganization of bash initialization.
                                                        ~/.bashrc | executed by bash¹ for interactive shells.
-![image](https://user-images.githubusercontent.com/10424858/120154192-3c4f3f80-c1b5-11eb-8842-4908fe1598a6.png) ![shabang](https://user-images.githubusercontent.com/10424858/120154699-bda6d200-c1b5-11eb-95a8-7c2b05b0bb57.png)
+
+![shabang](https://user-images.githubusercontent.com/10424858/120156259-6e61a100-c1b7-11eb-9426-7cf142d6b0a3.png)
 
 
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
