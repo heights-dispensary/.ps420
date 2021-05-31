@@ -5,7 +5,8 @@
 
 
                 
-                                        Script Name   : .ps420
+                                        Script Name   : .ps420 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
+
                                         Path          : ~/.                                                 
                                         Description   : ~/.ps420  | a reorganization of bash initialization.
                                                        ~/.bashrc | executed by bash¹ for interactive shells.
@@ -26,7 +27,6 @@
 
 
                                         Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.xz
-
 
 
 
