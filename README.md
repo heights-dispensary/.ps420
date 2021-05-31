@@ -14,7 +14,7 @@
                                         Description   : ~/.ps420  | a reorganization of bash initialization.
                                                        ~/.bashrc | executed by bash¹ for interactive shells.
 
-![shabang](https://user-images.githubusercontent.com/10424858/120164618-60644e00-c1c0-11eb-95bb-b1279c9f22be.png)
+[![badge](https://user-images.githubusercontent.com/10424858/120164618-60644e00-c1c0-11eb-95bb-b1279c9f22be.png)
 
 
                                         Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
