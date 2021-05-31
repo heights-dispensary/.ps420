@@ -5,9 +5,6 @@
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
 
-
-
-
                 
                                         Script Name   : .ps420 
 
@@ -19,23 +16,20 @@
 [![badge](https://user-images.githubusercontent.com/10424858/120164618-60644e00-c1c0-11eb-95bb-b1279c9f22be.png)
 
 
-                                        Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
+      Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions ~/
 
-                                        Email         : webserver@heightsdispensary.com 
-                                        Public License: 
-
-
-                                                      
-                                        
-                                        Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
-                                                        Provided with no liability or warranty.² 
-                                                        Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
-                                                        https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
-                                                        https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
-                                                        https://developer.gnome.org/NetworkManager/stable/nmcli.html³
+      Email         : webserver@heightsdispensary.com 
 
 
-                                        Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.xz
+      Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
+                      Provided with no liability or warranty.² 
+                      Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
+                      https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
+                      https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
+                      https://developer.gnome.org/NetworkManager/stable/nmcli.html³
+
+
+      Install with: sudo rn .bashrc .bashrc.bak && sudo tar -C ~/. -zxvf ps420.tar.xz
 
 
 
