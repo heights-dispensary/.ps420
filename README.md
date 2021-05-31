@@ -2,8 +2,9 @@
 ![pa42oinit](https://user-images.githubusercontent.com/10424858/120240771-ffbc2c00-c226-11eb-83a3-06b529921968.png)
 
 
+![MITlicense](https://user-images.githubusercontent.com/10424858/120239400-d1891d00-c223-11eb-9c63-ebf86f17558d.png)
 
-[![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
+
 
       
       Manual Installation
@@ -21,7 +22,7 @@
 ![ps420](https://user-images.githubusercontent.com/10424858/120169570-b687c000-c1c5-11eb-9f9a-886eec682f6b.png)
 
 
-      Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions
+      Related files : ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions
 
       Email         : webserver@heightsdispensary.com 
       
