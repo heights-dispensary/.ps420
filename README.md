@@ -22,6 +22,9 @@
       Related files :  ~/.bashrc ~/.alias ~/.source ~/.exports ~/.functions
 
       Email         : webserver@heightsdispensary.com 
+      
+      
+ ![MITlicense](https://user-images.githubusercontent.com/10424858/120239400-d1891d00-c223-11eb-9c63-ebf86f17558d.png)
 
 
       Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
