@@ -1,7 +1,7 @@
                       
 
 [![Generic badge](https://img.shields.io/badge/.BASHRC-RE~ORGANIZED-<COLOR>.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://heightsdispensary.com/)
+[![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-.svg)](https://heightsdispensary.com/)
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
 
