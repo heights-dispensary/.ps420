@@ -1,6 +1,6 @@
     # bashrc
     ~/.ps420:  
-                  ![leafps420](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)
+                  ![ScreenShot](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)
 
 
 
