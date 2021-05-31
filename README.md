@@ -3,7 +3,7 @@
 
 
                 
-                                        Script Name   : .ps420 | ![vscode](https://user-images.githubusercontent.com/10424858/120159677-1331ad80-c1bb-11eb-8bda-728922cfd592.png) ![maint2](https://user-images.githubusercontent.com/10424858/120159685-14fb7100-c1bb-11eb-9a06-f428c36f886b.png)
+                                        Script Name   : .ps420 | ![shabang](https://user-images.githubusercontent.com/10424858/120159677-1331ad80-c1bb-11eb-8bda-728922cfd592.png) ![maint2](https://user-images.githubusercontent.com/10424858/120159685-14fb7100-c1bb-11eb-9a06-f428c36f886b.png)
 
 
                                         Path          : ~/.                                                 
