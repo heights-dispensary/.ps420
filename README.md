@@ -1,7 +1,6 @@
                       
 
 [![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
 
 
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://shields.io/)
@@ -24,7 +23,8 @@
                                         Email         : webserver@heightsdispensary.com 
                                         Public License: 
 
-                                        
+                                        [![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
+
                                                       
                                         
                                         Disclaimer    : Some functionality requires sudoers access or passing sudo in script.
