@@ -6,9 +6,9 @@
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://shields.io/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-[![Generic badge](https://img.shields.io/badge/<LICENSED>-<MIT>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
-[![DOI:.bash.rc~.ps420~.alias~.source~.exports~.functions-](https://zenodo.org/badge/DOI/.bash.rc~.ps420~.alias~.source~.exports~.functions-.svg)](https://doi.org/10.1007/978-3-319-76207-4_15)
+[![DOI:.bash.rc~.ps420~.alias~.source~.exports~.functions-](https://zenodo.org/badge/BASH/.bash.rc~.ps420~.alias~.source~.exports~.functions-.svg)](https://doi.org/10.1007/978-3-319-76207-4_15)
 
 
 
