@@ -1,7 +1,7 @@
                       
 
 
-[![Generic badge](https://img.shields.io/badge/bash.RC-<BASHRC|PS420|SOURCE|ALIAS|EXPORTS|FUNCTIONS>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/bash.rc-<.ps420|PS420|SOURCE|ALIAS|EXPORTS|FUNCTIONS>-<COLOR>.svg)](https://shields.io/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
