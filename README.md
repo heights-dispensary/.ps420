@@ -1,7 +1,10 @@
     # bashrc
     ~/.ps420:  
+                  ![leaf.ps420](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)
 
 
+
+                
     Script Name   : .ps420
     Path          : ~/.                                                 
     Description   : ~/.ps420  | a reorganization of bash initialization.
