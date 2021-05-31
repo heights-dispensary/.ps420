@@ -1,7 +1,7 @@
     # bashrc
     ~/.ps420:  
 
-    [![Logo: ps420](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)](https://github.com/heights-dispensary/.ps420)
+    [![Logo:ps420](https://github.com/heights-dispensary/.ps420/blob/main/leaf.ps420.png)](https://github.com/heights-dispensary/.ps420)
 
     Script Name   : .ps420
     Path          : ~/.                                                 
