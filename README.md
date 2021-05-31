@@ -1,7 +1,7 @@
                       
 
 
-[![Generic badge](https://img.shields.io/badge/<BASH>-<.BASHRC-REORGANIZATION>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/<BASH>-<REORGANIZATION>-<COLOR>.svg)](https://shields.io/)
 
                 
                                         Script Name   : .ps420 
