@@ -34,7 +34,7 @@
                       Provided with no liability or warranty.² 
                       Tested only in Debian Buster and Bullseye, Gnome libraries required.                      
                       https://www.sudo.ws/man/1.8.17/sudoers.man.html¹
-                      https://www.gnu.org/licenses/gpl-3.0.en.html#terms² 
+                      MIT License, Copyright (c) 2021 Heights Dispensary² 
                       https://developer.gnome.org/NetworkManager/stable/nmcli.html³
 
 
