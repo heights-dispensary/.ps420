@@ -4,6 +4,7 @@
 [![Generic badge](https://img.shields.io/badge/.bash.rc~.ps420~.alias~.source~.exports~.functions-<COLOR>.svg)](https://heightsdispensary.com/)
 [![Generic badge](https://img.shields.io/badge/LICENSED-MIT-<COLOR>.svg)](https://shields.io/)
 
+      Install with: wget -O ps420.tar.xz https://git.io/JGBe6 && sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
 
                 
       Script Name   : .ps420 
