@@ -8,6 +8,9 @@
 
 [![Generic badge](https://img.shields.io/badge/<.BASHRC>-<RE~ORGANIZED>-<COLOR>.svg)](https://shields.io/)
 
+[![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/10.1007/978-3-319-76207-4_15.svg)](https://doi.org/10.1007/978-3-319-76207-4_15)
+
+
 
                 
                                         Script Name   : .ps420 
