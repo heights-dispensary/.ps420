@@ -5,9 +5,10 @@
 ![MITlicense](https://user-images.githubusercontent.com/10424858/120239400-d1891d00-c223-11eb-9c63-ebf86f17558d.png)
 
       
-      wget -O ps420.tar.xz https://git.io/JGBe6
-      sudo mv ~/.bashrc ~/bashrc.bak
-      sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
+      wget -O ps420.tar.xz https://git.io/JGBe6 ; sudo mv ~/.bashrc ~/bashrc.bak ;  sudo tar -C ~/. -xvf ps420.tar.xz --overwrite
+![installlike](https://user-images.githubusercontent.com/10424858/120250327-58012700-c243-11eb-9d0b-0b806628c50c.png)
+  
+     
                                           
 
 ![ps420](https://user-images.githubusercontent.com/10424858/120169570-b687c000-c1c5-11eb-9f9a-886eec682f6b.png)
