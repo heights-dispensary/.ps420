@@ -9,7 +9,7 @@
 #                                |___/                             |_|                              |___/ 
 
     #aliases 
-
+    alias shellarg="sudo /bin/sh -c"
     alias watch="sudo iftop -i "
     alias bashrc="sudo nano -l ~/.bashrc"
     alias listen="mplayer http://drugs.money"
