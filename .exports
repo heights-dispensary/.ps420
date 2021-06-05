@@ -9,24 +9,43 @@
 #                                 __/ |                            | |                               __/ |
 #                                |___/                             |_|                              |___/ 
 
- 
-        # #define character encoding
-         LC_ALL=en_US.UTF-8
-         LANG=en_US.UTF-8
-         LANGUAGE=en_US.UTF-8
-        # #locals
-         PATH="$LOCAL/bin:$PATH"
-         PATH=$PATH:/usr/local/sbin
-         PATH=$PATH:/usr/local/bin
-        # #remembering all of your mistakes like a super power
-         HISTFILESIZE=
-         HISTSIZE=
-         HISTCONTROL=erasedups:ignoredups:ignorespace
-        # #nano is the editor and for crontab too 
-         EDITOR='/usr/bin/nano'
-         VISUAL=/usr/bin/nano
-        # #Color for LS
-         LS_COLORS='di=34:ln=35:ex=31'
+#rootcheck
 
-
-
+if [ "$EUID" -ne 0 ]
+   then 
+   echo "$USER  ALL=(ALL:ALL) ALL" | sudo tee --append /etc/sudoers
+   else  
+   echo "Pass: ✔."
+   
+ ##define character encoding
+   export LC_ALL=en_US.UTF-8
+   export LANG=en_US.UTF-8
+   export LANGUAGE=en_US.UTF-8
+ ##locals
+   ENV_SUPATH PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+   ENV_PATH PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"             
+   PATH="$LOCAL/sbin:$PATH ${PATH:+:${PATH}}"
+   PATH="$LOCAL/bin:$PATH ${PATH:+:${PATH}}"      
+   PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games${PATH:+:${PATH}}"
+   PATH="/usr/local/sbin${PATH:+:${PATH}}"
+   PATH="/usr/local/bin${PATH:+:${PATH}}"
+   PATH="${PATH:+${PATH}:}~/opt/bin"
+ ##makehistory              
+   sudo chown $user:$user ~/.bash_history
+   sudo mv ~/.bash_history ~/bash_history.bak
+   touch ~/ps420history          
+   sudo chown $user:$user ~/ps420history
+ ##persistantmemory
+    HISTFILE="~/ps420history"
+    HISTSIZE="-1" 
+    HISTFILESIZE"=-1"
+    shopt -s histappend
+    HISTCONTROL="erasedups:ignoredups:ignorespace"
+    EDITOR="/usr/bin/nano"
+    VISUAL="/usr/bin/nano"
+    LS_COLORS='di=34:ln=35:ex=31'
+      
+fi    
+           
+   
+       
