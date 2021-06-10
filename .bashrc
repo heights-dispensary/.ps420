@@ -53,7 +53,6 @@
 #                               https://developer.gnome.org/NetworkManager/stable/nmcli.html³  
 
                
-source ~/.ps420
 source ~/.source   
 
 
