@@ -7,8 +7,41 @@
 #                 |_|  |_|\___|_|\__, |_| |_|\__|___/ |_____/|_|___/ .__/ \___|_| |_|___/\__,_|_|   \__, |
 #                                 __/ |                            | |                               __/ |
 #                                |___/                             |_|                              |___/ 
-          
-           
+   	
+	#rootcheck
+
+	#check if exist in sudoers add if not with alias above
+	sudo -l -U $USER | grep -c NOPASSWD | awk '{if ($0==0) printf "Fixing" && $kingmaker; else if ($0>0) printf "  root check: ✔ "}'
+	echo
+
+	#does bash_history exist? no? make it. 
+	FILE=~/.bash_history
+	if [ -f "$FILE" ]; then
+    		printf "really odd pass: ✔."
+	else
+   		touch ~/.bash_history && printf "bash_history: ✔ "
+	fi
+	echo
+
+	#take ownership of bash history
+	sudo chown $user:$user ~/.bash_history
+	#lets make a backup black hole  of it and we dont have time to hear complaints
+	sudo mv ~/.bash_history ~/bash_history.bak 2>/dev/null
+
+	#does .ps420history exist? no? make it. 
+	FILE=~/.ps420history
+	if [ -f "$FILE" ]; then
+   		 printf "ps420history: ✔ "
+	else
+   	 	touch ~/.ps420history && printf "Fixed ps420history: ✔"
+	fi
+	echo
+	#make sure we own ps420history and we dont want to hear about it
+	sudo chown $user:$user ~/.ps420history 2>/dev/null
+	echo
+
+
+
 
             # ssh settings
             SSH_ENV="$HOME/.ssh/environment"
