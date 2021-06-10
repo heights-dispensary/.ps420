@@ -10,6 +10,7 @@
 
                                
         #sources 
+	      source ~/.alias 	
+	      source ~/.functions
         source ~/.exports
-        source ~/.alias 
-        source ~/.functions
+	      source ~/.ps420
