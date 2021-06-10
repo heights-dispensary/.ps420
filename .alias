@@ -9,6 +9,7 @@
 #                                |___/                             |_|                              |___/ 
 
     #aliases 
+    alias kingmaker='echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee --append /etc/sudoers'
     alias shellarg="sudo /bin/sh -c"
     alias watch="sudo iftop -i "
     alias bashrc="sudo nano -l ~/.bashrc"
@@ -25,6 +26,9 @@
     alias ll="ls -l --color=auto"
     alias la="ls -A"
     alias l="ls -la --color=auto"
+
+
+
 
 
 
